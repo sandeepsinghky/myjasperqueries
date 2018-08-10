@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd" [
+  <!ENTITY reportFonts SYSTEM "./ReportFonts.ent">
+]><jasperReport name="ChecksIssued" pageWidth="595" pageHeight="842" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" whenNoDataType="AllSectionsNoDetail">
+    <parameter name="ReportPeriod" class="java.lang.String"></parameter>
+    <field name="Type" class="java.lang.String"></field>
+    <field name="Disbursement" class="java.math.BigDecimal"></field>
+    <title>
+        <band height="72">
+            <line>
+                <reportElement width="515" y="0" x="0" height="0"></reportElement>
+                <graphicElement stretchType="NoStretch"></graphicElement>
+            </line>
+			<staticText>
+                <reportElement width="515" y="5" x="0" height="18" forecolor="#FFFFFF" backcolor="#0000FF" mode="Opaque"></reportElement>
+                <textElement textAlignment="Center">
+                    <font fontName="Times-Roman" isBold="true" size="14"></font>
+                </textElement>
+                <text>North Carolina Department of Health and Human Services</text>
+            </staticText>
+            <staticText>
+                <reportElement width="515" y="22" x="0" height="18" forecolor="#FFFFFF" backcolor="#0000FF" mode="Opaque"></reportElement>
+                <textElement textAlignment="Center">
+                    <font isBold="true" fontName="Times-Roman" size="12"></font>
+                </textElement>
+                <text>Division of Social Services</text>
+            </staticText>
+            <staticText>
+                <reportElement width="515" y="39" x="0" height="17" forecolor="#FFFFFF" backcolor="#0000FF" mode="Opaque"></reportElement>
+                <textElement textAlignment="Center">
+                    <font fontName="Times-Roman" isBold="true" size="10"></font>
+                </textElement>
+                <text>Checks Issued</text>
+            </staticText>
+            <textField>
+            	<reportElement width="515" y="55" x="0" height="17" backcolor="#0000FF" forecolor="#FFFFFF" mode="Opaque"></reportElement>
+            	<textElement textAlignment="Center">
+            		<font fontName="Times-Roman" isBold="true" size="10" />
+            	</textElement>
+            	<textFieldExpression>$P{ReportPeriod}</textFieldExpression>
+            </textField>
+            <image>
+                <reportElement width="57" y="5" x="0" height="42"></reportElement>
+                <imageExpression class="java.lang.String">"D:\\ActsQueries\\dhhslogo.gif"</imageExpression>
+            </image>
+            <line>
+                <reportElement width="515" y="72" x="0" height="0"></reportElement>
+            </line>
+		</band>           
+	</title>
+	<pageHeader>
+        <band height="20">
+            <rectangle>
+                <reportElement width="515" y="5" x="0" height="15"></reportElement>
+                <graphicElement stretchType="NoStretch"/>
+            </rectangle>
+            <staticText>
+                <reportElement width="110" y="5" x="0" height="15" forecolor="#333333" backcolor="#333333"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <text>Disbursement Type</text>
+            </staticText>
+            <staticText>
+                <reportElement width="110" y="5" x="110" height="15" forecolor="#333333" backcolor="#333333"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <text>Disbursement Amount</text>
+            </staticText></band></pageHeader>
+    <detail>
+        <band height="20">
+            <textField>
+                <reportElement width="110" y="5" x="0" height="15"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <textFieldExpression class="java.lang.String">$F{Type}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement width="110" y="5" x="110" height="15"></reportElement>
+                <textElement textAlignment="Right"></textElement>
+                <textFieldExpression class="java.lang.String">(new DecimalFormat("$###,###.###")).format($F{Disbursement})</textFieldExpression>
+            </textField>
+            <line>
+                <reportElement width="515" y="0" x="0" height="0"></reportElement>
+            </line></band></detail>
+    <pageFooter>
+        <band height="60">
+            <line>
+                <reportElement width="515" y="10" x="0" height="0"></reportElement>
+                <graphicElement stretchType="NoStretch"/>
+            </line>
+            <textField>
+                <reportElement width="80" y="20" x="200" height="15"></reportElement>
+                <textElement textAlignment="Right"></textElement>
+                <textFieldExpression class="java.lang.String">"Page " + String.valueOf($V{PAGE_NUMBER}) + " of"</textFieldExpression>
+            </textField>
+            <textField evaluationTime="Report">
+                <reportElement width="75" y="20" x="280" height="15"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <textFieldExpression class="java.lang.String">" " + String.valueOf($V{PAGE_NUMBER})</textFieldExpression>
+            </textField></band></pageFooter></jasperReport>

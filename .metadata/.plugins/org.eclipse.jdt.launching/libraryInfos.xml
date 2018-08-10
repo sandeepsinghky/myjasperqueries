@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Program Files\Java\jre1.8.0_171" version="1.8.0_171">
+<bootpath>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_171\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_171\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre" version="1.8.0">
+<bootpath>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\bin\compressedrefs\jclSC180\vm.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\se-service.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\cuda4j.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\math.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmcfw.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmpkcs.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmcertpathfw.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmjgssfw.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmjssefw.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmsaslfw.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmjsseprovider2.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\xmldsigfw.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\xml.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\resources.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\dataaccess.jar"/>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ibmgpu.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\IBM\WebSphere\AppServer\java\8.0\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

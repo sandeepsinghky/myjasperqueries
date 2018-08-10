@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server baseServerName="server1" hostname="localhost" id="WebSphere Application Server traditional V9.0 at localhost" isAutoConnectionTypeEnabled="true" isHotMethodReplace="true" isOptimiziedForDevelopmentEnv="true" isQuickBatchServerStart="true" isRunServerWithWorkspaceResources="true" isUTCEnabled="true" isZeroBinaryEnabled="true" name="WebSphere Application Server traditional V9.0 at localhost" publish-trigger-type="publish-trigger-type-global" runtime-id="WebSphere Application Server traditional V9.0" securityPasswd="{xor}" server-type="com.ibm.ws.ast.st.v9.server.base" server-type-id="com.ibm.ws.ast.st.v9.server.base" serverConnectionType="IPC" serverIPCConnectorPortNum="9633" serverOrbBootstrapPortNum="2809" serverSoapConnectorPortNum="8880" start-timeout="300" stop-timeout="120" timestamp="26" webSphereProfileName="AppSrv01">
+    <list key="connectorTypeList" value0="IPC" value1="JSR160RMI" value2="RMI" value3="SOAP"/>
+    <list key="modules"/>
+  </server>
+</servers>

@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<!DOCTYPE jasperReport PUBLIC "-//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd" [
+  <!ENTITY reportFonts SYSTEM "./ReportFonts.ent">
+]><jasperReport name="QueryFourDef" pageWidth="842" pageHeight="595" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" whenNoDataType="AllSectionsNoDetail" orientation="Landscape">
+    <parameter name="ReportPeriod" class="java.lang.String"></parameter>
+    <field name="Mpi" class="java.lang.String"></field>
+    <field name="TranAmount" class="java.lang.String"></field>
+    <field name="Date" class="java.lang.String"></field>
+    <field name="CodeJnlevt" class="java.lang.String"></field>
+    <field name="Balance" class="java.lang.String"></field>
+    <variable name="TranAmtSum" class="java.math.BigDecimal" calculation="Sum" resetType="Report">
+        <variableExpression>(new BigDecimal(Double.parseDouble($F{TranAmount})))</variableExpression>
+    </variable>
+    <variable name="BalanceSum" class="java.math.BigDecimal" calculation="Sum" resetType="Report">
+        <variableExpression>(new BigDecimal(Double.parseDouble($F{Balance})))</variableExpression>
+    </variable>
+    <title>
+        <band height="85">
+            <line>
+                <reportElement width="790" y="0" x="0" height="0"></reportElement>
+                <graphicElement stretchType="NoStretch"></graphicElement>
+            </line>
+            <staticText>
+                <reportElement width="790" y="5" x="0" height="18" forecolor="#FFFFFF" backcolor="#0000FF" mode="Opaque"></reportElement>
+                <textElement textAlignment="Center">
+                    <font fontName="Times-Roman" isBold="true" size="14"></font>
+                </textElement>
+                <text>North Carolina Department of Health and Human Services</text>
+            </staticText>
+
+            <staticText>
+                <reportElement width="790" y="22" x="0" height="18" forecolor="#FFFFFF" backcolor="#0000FF" mode="Opaque"></reportElement>
+                <textElement textAlignment="Center">
+                    <font isBold="true" fontName="Times-Roman" size="12"></font>
+                </textElement>
+                <text>Division of Social Services</text>
+            </staticText>
+            <staticText>
+                <reportElement width="790" y="39" x="0" height="17" forecolor="#FFFFFF" backcolor="#0000FF" mode="Opaque"></reportElement>
+                <textElement textAlignment="Center">
+                    <font fontName="Times-Roman" isBold="true" size="10"></font>
+                </textElement>
+                <text>NPA Recoupments</text>
+            </staticText>
+            <textField>
+            	<reportElement width="790" y="55" x="0" height="17" backcolor="#0000FF" forecolor="#FFFFFF" mode="Opaque"></reportElement>
+            	<textElement textAlignment="Center">
+            		<font fontName="Times-Roman" isBold="true" size="10" />
+            	</textElement>
+            	<textFieldExpression>$P{ReportPeriod}</textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement width="100" y="70" x="0" height="15" forecolor="#000000" backcolor="#F2F2FF" mode="Opaque"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <text>Mpi #</text>
+            </staticText>
+            <staticText>
+                <reportElement width="110" y="70" x="100" height="15" forecolor="#000000" backcolor="#F2F2F2" mode="Opaque"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <text>Tran Amt Applied</text>
+            </staticText>
+            <staticText>
+                <reportElement width="100" y="70" x="220" height="15" backcolor="#F2F2F2" forecolor="#000000" mode="Opaque"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <text>Tran Date</text>
+            </staticText>
+            <staticText>
+                <reportElement width="100" y="70" x="320" height="15" backcolor="#F2F2F2" forecolor="#000000" mode="Opaque"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <text>Event Type</text>
+            </staticText>
+            <staticText>
+                <reportElement width="120" y="70" x="420" height="15" backcolor="#F2F2F2" forecolor="#000000" mode="Opaque"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <text>Subaccount Balance</text>
+            </staticText>
+            <image>
+                <reportElement width="57" y="5" x="0" height="42"></reportElement>
+                <imageExpression class="java.lang.String">"D:\\ActsQueries\\dhhslogo.gif"</imageExpression>
+            </image>
+        </band>
+    </title>
+    <detail>
+        <band height="20">
+            <textField>
+                <reportElement width="100" y="5" x="0" height="15"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <textFieldExpression class="java.lang.String">$F{Mpi}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement width="110" y="5" x="100" height="15"></reportElement>
+                <textElement textAlignment="Right"></textElement>
+                <textFieldExpression class="java.lang.String">(new DecimalFormat("$###,###.###")).format(new BigDecimal(Double.parseDouble($F{TranAmount})))</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement width="100" y="5" x="220" height="15"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <textFieldExpression class="java.lang.String">(new SimpleDateFormat("MM/dd/yyyy")).format(java.sql.Date.valueOf($F{Date}))</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement width="100" y="5" x="320" height="15"></reportElement>
+                <textElement textAlignment="Left"></textElement>
+                <textFieldExpression class="java.lang.String">$F{CodeJnlevt}</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement width="120" y="5" x="420" height="15"></reportElement>
+                <textElement textAlignment="Right"></textElement>
+                <textFieldExpression class="java.lang.String">(new DecimalFormat("$###,###.###")).format(new BigDecimal(Double.parseDouble($F{Balance})))</textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <summary>
+        <band height="60">
+            <textField>
+                <reportElement width="110" y="5" x="100" height="15"></reportElement>
+                <textElement textAlignment="Right"></textElement>
+                <textFieldExpression>(new DecimalFormat("$###,###.###")).format($V{TranAmtSum})</textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement width="120" y="5" x="410" height="15"></reportElement>
+                <textElement textAlignment="Right"></textElement>
+                <textFieldExpression>(new DecimalFormat("$###,###.###")).format($V{BalanceSum})</textFieldExpression>
+            </textField></band></summary>
+</jasperReport>

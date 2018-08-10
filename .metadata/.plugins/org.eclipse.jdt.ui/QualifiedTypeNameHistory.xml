@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="dori.jasper.engine.export.JRPdfExporter"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.export.SimplePdfExporterConfiguration"/>
+<fullyQualifiedTypeName name="com.lowagie.text.pdf.PdfWriter"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.export.JRPdfExporterParameter"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.JasperFillManager"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.JRResultSetDataSource"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.JasperExportManager"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.util.JRLoader"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.JasperPrint"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.export.JRXlsExporter"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.JRExporterParameter"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.export.JRXlsExporterParameter"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.export.JRCsvExporter"/>
+<fullyQualifiedTypeName name="net.sf.jasperreports.engine.JRException"/>
+</qualifiedTypeNameHistroy>

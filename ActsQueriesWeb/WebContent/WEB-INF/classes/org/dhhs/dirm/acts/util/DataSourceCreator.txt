@@ -1,0 +1,14 @@
+package org.dhhs.dirm.acts.util;
+
+public class DataSourceCreator
+{
+  public DataSourceCreator()
+  {
+    DataSourceAdmin ds = new DataSourceAdmin();
+  }
+  
+  public static void main(String[] args)
+  {
+    DataSourceCreator dsc = new DataSourceCreator();
+  }
+}

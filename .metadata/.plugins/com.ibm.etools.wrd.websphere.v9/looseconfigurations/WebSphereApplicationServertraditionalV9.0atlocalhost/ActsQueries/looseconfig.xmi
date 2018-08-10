@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.jst.j2ee.commonarchivecore.looseconfig:LooseArchive xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.eclipse.jst.j2ee.commonarchivecore.looseconfig="commonarchive.looseconfig.xmi" uri="C:\Users\ssingh3\A-EclipseWorkSpace\ActsQueries-WorkSpace\ActsQueries" binariesPath="C:\Users\ssingh3\A-EclipseWorkSpace\ActsQueries-WorkSpace\ActsQueries" resourcesPath="C:\Users\ssingh3\A-EclipseWorkSpace\ActsQueries-WorkSpace\ActsQueries" archiveType="EAR">
+  <looseChildren uri="ActsQueriesWeb.war" binariesPath="C:\Users\ssingh3\A-EclipseWorkSpace\ActsQueries-WorkSpace\ActsQueriesWeb\WebContent" resourcesPath="C:\Users\ssingh3\A-EclipseWorkSpace\ActsQueries-WorkSpace\ActsQueriesWeb\WebContent" archiveType="WAR"/>
+</org.eclipse.jst.j2ee.commonarchivecore.looseconfig:LooseArchive>

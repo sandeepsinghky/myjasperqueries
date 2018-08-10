@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rational.ttt.ustc.core.model:USTC xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rational.test.lt.models.wscore.datamodel.protocol.mq="http:///com/ibm/rational/test/lt/models/wscore/datamodel/protocol/mq.ecore" xmlns:com.ibm.rational.test.lt.models.wscore.protocol.dotnet="http:///com/ibm/rational/test/lt/models/wscore/protocol/dotnet.ecore" xmlns:com.ibm.rational.test.lt.models.wscore.protocol.http="http:///com/ibm/rational/test/lt/models/wscore/protocol/http.ecore" xmlns:com.ibm.rational.test.lt.models.wscore.protocol.jms="http:///com/ibm/rational/test/lt/models/wscore/protocol/jms.ecore" xmlns:com.ibm.rational.test.lt.models.wscore.protocol.mqn="http:///com/ibm/rational/test/lt/models/wscore/protocol/mqn.ecore" xmlns:com.ibm.rational.ttt.ustc.core.model="http:///com/ibm/rational/ttt/ustc/core/model.ecore">
+  <callHistory/>
+  <store>
+    <protocolConfigurations>
+      <ProtocolConfigurationAliasStore aliasName="XdefaulthttpX">
+        <configuration xsi:type="com.ibm.rational.test.lt.models.wscore.protocol.http:HttpCallConfiguration">
+          <ConnectionType/>
+          <SSLConnection storeAlias=""/>
+          <Proxy adresse="" port="0">
+            <BasicAuthentification userName="" password=""/>
+            <NTLMAuthentification negHostName="" negDomainName="" autHostName="" autDomainName="" autUserName="" authPassWord=""/>
+          </Proxy>
+          <BasicAuthentification userName="" password=""/>
+          <NTLMAuthentification negHostName="" negDomainName="" autHostName="" autDomainName="" autUserName="" authPassWord=""/>
+          <KerberosAuthentification userName="" password="" realm=""/>
+          <CustomClassAdapter useCustomClass="false" className=""/>
+        </configuration>
+      </ProtocolConfigurationAliasStore>
+      <ProtocolConfigurationAliasStore aliasName="XdefaultjmsX">
+        <configuration xsi:type="com.ibm.rational.test.lt.models.wscore.protocol.jms:JMSProtocolConfiguration">
+          <BasicAuthentification userName="" password=""/>
+        </configuration>
+      </ProtocolConfigurationAliasStore>
+      <ProtocolConfigurationAliasStore aliasName="XdefaultmqX">
+        <configuration xsi:type="com.ibm.rational.test.lt.models.wscore.datamodel.protocol.mq:MQProtocolConfiguration" useTemporaryObjects="true" useSOAPoverMQ="true">
+          <MQMessageDescriptor/>
+        </configuration>
+      </ProtocolConfigurationAliasStore>
+      <ProtocolConfigurationAliasStore aliasName="XdefaultmqnativeX">
+        <configuration xsi:type="com.ibm.rational.test.lt.models.wscore.protocol.mqn:MQNProtocolConfiguration">
+          <settings useLocalQueueManager="true">
+            <BasicAuthentication userName="" password=""/>
+          </settings>
+          <ssl/>
+          <options>
+            <Read open="8193"/>
+            <Write open="8208"/>
+            <Browse open="8" first="16" next="32"/>
+          </options>
+          <advanced/>
+        </configuration>
+      </ProtocolConfigurationAliasStore>
+      <ProtocolConfigurationAliasStore aliasName="XdefaultDotNetX">
+        <configuration xsi:type="com.ibm.rational.test.lt.models.wscore.protocol.dotnet:DotNetProtocolConfiguration">
+          <UserName/>
+          <Password/>
+          <endPointProtectionLevel/>
+        </configuration>
+      </ProtocolConfigurationAliasStore>
+    </protocolConfigurations>
+    <sslStore/>
+    <algoStore/>
+  </store>
+</com.ibm.rational.ttt.ustc.core.model:USTC>
